@@ -1,17 +1,17 @@
-#import streamlit as st
+# import streamlit as st
 
-#st.header('Tossing a Coin')
+# st.header('Tossing a Coin')
 
-#st.write('It is not a functional application yet. Under construction.')
+# st.write('It is not a functional application yet. Under construction.')
 
-#number_of_trials = st.slider('Number of trials?', 1, 1000, 10)
-#start_button = st.button('Run')
+# number_of_trials = st.slider('Number of trials?', 1, 1000, 10)
+# start_button = st.button('Run')
 
-#if start_button:
+# if start_button:
 #    st.write(f'Running the experiment of {number_of_trials} trials.')
 
-#st.write('It is not a functional application yet. Under construction.')
-import pandas as pd #I just added this pandas and line 19 to 25 at step 4 (after creating the True buttom)
+# st.write('It is not a functional application yet. Under construction.')
+import pandas as pd  # I just added this pandas and line 19 to 25 at step 4 (after creating the True buttom)
 import scipy.stats
 import streamlit as st
 import time
@@ -21,12 +21,14 @@ if 'experiment_no' not in st.session_state:
     st.session_state['experiment_no'] = 0
 
 if 'df_experiment_results' not in st.session_state:
-    st.session_state['df_experiment_results'] = pd.DataFrame(columns=['no', 'iterations', 'mean'])
+    st.session_state['df_experiment_results'] = pd.DataFrame(
+                        columns=['no', 'iterations', 'mean'])
 
-#The title
+# The title
 st.header('Tossing Coins')
-#The canvas chart
+# The canvas chart
 chart = st.line_chart([0.5])
+
 
 def toss_coin(n):
 
@@ -37,7 +39,7 @@ def toss_coin(n):
     outcome_1_count = 0
 
     for r in trial_outcomes:
-        outcome_no +=1
+        outcome_no += 1
         if r == 1:
             outcome_1_count += 1
         mean = outcome_1_count / outcome_no
@@ -45,14 +47,14 @@ def toss_coin(n):
         time.sleep(0.05)
 
     return mean
-#The number of trials buttom
+# The number of trials buttom
 number_of_trials = st.slider('Number of trials?', 1, 1000, 10)
 start_button = st.button('Run')
 
 if start_button:
     st.write(f'Running the experient of {number_of_trials} trials.')
     st.session_state['experiment_no'] += 1 #FinalStep5 and line 56 to the end.
-    mean = toss_coin(number_of_trials) #This line code is to get the True value when clicking the bottom.tosscoinasstartbuttom.txt
+    mean = toss_coin(number_of_trials) # This line code is to get the True value when clicking the bottom.tosscoinasstartbuttom.txt
     st.session_state['df_experiment_results'] = pd.concat([
         st.session_state['df_experiment_results'],
         pd.DataFrame(data=[[st.session_state['experiment_no'],
