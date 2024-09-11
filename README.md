@@ -12,11 +12,11 @@ This is a tool to simulate random events, and the methods and libraries used to 
 
 ## Installation
 <ol>
-<li>1. Clone the repository to your local machine.</li>
-<li>2. Install the required packages using pip:</li>
+<li>Clone the repository to your local machine.</li>
+<li>Install the required packages using pip:</li>
 </ol>
-pip install pandas      
-pip install scipy     
-pip install streamlit       
-pip install altair    
-pip install plotly   
+<p>pip install pandas</p>
+<p>pip install scipy</p>
+<p>pip install streamlit</p> 
+<p>pip install altair</p>
+<p>pip install plotly</p>
