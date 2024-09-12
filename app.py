@@ -50,11 +50,11 @@ actual_range = list(range(year_range[0], year_range[1]+1))
 vehicles_filtered = vehicles[(vehicles.brand == select_menu) & (vehicles.model_year.isin(list(actual_range)))]
 
 # Formatting
-vehicles_filtered = vehicles_filtered.style.format({
-    'price': '${:,.2f}',  # Format as dollar amount with two decimal places
-}).format({
-    'model_year': lambda x: f"{x:.0f}"  # Remove commas from years (treated as float/int)
-})
+#vehicles_filtered = vehicles_filtered.style.format({
+#    'price': '${:,.2f}',  # Format as dollar amount with two decimal places
+#}).format({
+#    'model_year': lambda x: f"{x:.0f}"  # Remove commas from years (treated as float/int)
+#})
 vehicles_filtered
 
 # Price Analysis section starts here:
