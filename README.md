@@ -8,7 +8,7 @@ Software Development Tools
 This project focuses on an exploratory data analysis (EDA) of a comprehensive dataset containing detailed information about vehicles available in the USA.       
 The goal of this analysis is to uncover patterns and insights related to vehicle pricing and how it varies across several key factors, including odometer readings, brand, transmission type, body type, and paint color.    
  
-This is a tool to simulate random events, and the methods and libraries used to implement it. 
+This is a tool to simulate random events. 
 
 ## Installation
 
@@ -35,36 +35,24 @@ You can copy it and paste it somewhere else (Just make sure you remember where y
 
 <li>Click on Terminal (It's at the topleft menu)</li> 
 
-
 <li>Click on New Terimal</li>      
 
+<p>Once you click on New Terminal there will be a window that will pop out on the bottom of the screen.</p>      
 
-<p>Once you click on New Terminal there will be a window that will pop out on the bottom of the screen.   
-In that screen:</p>
+<p>In that screen:</p>
 
 <li>Click on launch profile (The arrow facing down at the top right menu)</li>  
 
-
-
 <li>Click on Git Bash (Let it load a few seconds)</li>
-
-
 
 <li>Type on the Terminal right next to the $ symbol:</li>  
 
-
-
 streamlit run app.py       
-
-
 
 <li>After that you'll see the message:</li>
 
-
-
 "You can now view your Streamlit app in your browser."   
 </ol>
-
 
 That's it! Happy browsing on your computer!
 
