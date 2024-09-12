@@ -55,7 +55,7 @@ vehicles_filtered = vehicles[(vehicles.brand == select_menu) & (vehicles.model_y
 #}).format({
 #    'model_year': lambda x: f"{x:.0f}"  # Remove commas from years (treated as float/int)
 #})
-vehicles_filtered
+st.table(vehicles_filtered)
 
 # Price Analysis section starts here:
 
