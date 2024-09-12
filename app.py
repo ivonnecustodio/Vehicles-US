@@ -354,7 +354,6 @@ The color purple has many associations, including **wisdom**, **royalty**, **pow
 """)
 
 
-
 result = st.button("Gentle Reminder")
 st.write(result)
 if result:
